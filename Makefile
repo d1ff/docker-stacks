@@ -11,7 +11,7 @@ OWNER:=jupyter
 ARCH:=$(shell uname -m)
 
 ifeq ($(ARCH),ppc64le)
-ALL_STACKS:=base-notebook 
+ALL_STACKS:=base-notebook
 else
 ALL_STACKS:=base-notebook \
 	minimal-notebook \
@@ -20,6 +20,7 @@ ALL_STACKS:=base-notebook \
 	tensorflow-notebook \
 	datascience-notebook \
 	pyspark-notebook \
+	theano-notebook \
 	all-spark-notebook
 endif
 
